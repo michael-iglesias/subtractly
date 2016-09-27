@@ -1,7 +1,7 @@
 {
   "name": "subtractly",
   "version": "1.0.0",
-  "description": "higher-order reducer to hydrate state from URL parameters",
+  "description": "Javascript utility whose main exported function is a polymorphic subtraction function.",
   "main": "lib/index.js",
   "scripts": {
     "clean": "./node_modules/.bin/rimraf lib",

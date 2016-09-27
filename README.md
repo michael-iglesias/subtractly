@@ -1,12 +1,12 @@
-# Redux Gatorade - Keeping your application state hydrated
+# Subtractly - Javascript utility to help you with subtracting
 
-_redux library that helps out in hydrating state from URL parameters_
+_Exports a polymorphic 'subtract()' that can take numbers, strings, objects, & arrays_
 
 
 ## Installation
 
 ```
-npm install --save redux-gatorade
+npm install --save subtractly
 ```
 
 ## What is this magic? How does it work?

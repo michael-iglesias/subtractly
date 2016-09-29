@@ -1,6 +1,6 @@
 {
   "name": "subtractly",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript utility whose main exported function is a polymorphic subtraction function.",
   "main": "lib/index.js",
   "scripts": {

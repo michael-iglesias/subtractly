@@ -1,6 +1,9 @@
+sudo: false
 language: node_js
 node_js:
-  - "4.0.0"
+  - stable
 script:
   - npm run lint
-  - npm test
+  - npm run test
+  - npm run test:cov
+  - npm run test:coveralls

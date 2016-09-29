@@ -1,4 +1,4 @@
-# Subtractly - Javascript utility to help you with subtracting
+# Subtractly - Javascript utility to help you with subtraction
 
 _Exports a polymorphic 'subtract()' that can take numbers, strings, objects, & arrays_
 

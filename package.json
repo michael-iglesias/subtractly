@@ -9,7 +9,6 @@
     "lint": "./node_modules/.bin/eslint src test",
     "test": "NODE_ENV=test ./node_modules/.bin/mocha --compilers js:babel-core/register --recursive",
     "test:watch": "NODE_ENV=test ./node_modules/.bin/mocha --compilers js:babel-core/register --recursive --watch",
-    "test:cov": "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover --root src/ ./node_modules/.bin/_mocha -R mocha-lcov-reporter > coverage/coverage.lcov",
     "test:cover": "NODE_PATH=./src babel-node ./node_modules/.bin/babel-istanbul cover _mocha -- --require ./testSetup.js",
     "test:coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "prepublish": "npm run lint && npm run test && npm run clean && npm run build"
@@ -47,11 +46,8 @@
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-standard": "^2.0.0",
     "expect": "^1.14.0",
-    "isparta": "^4.0.0",
     "istanbul": "^0.4.5",
-    "jscover": "^1.0.0",
     "mocha": "^3.0.2",
-    "mocha-lcov-reporter": "^1.2.0",
     "rimraf": "^2.5.2",
     "should": "^11.1.0"
   },

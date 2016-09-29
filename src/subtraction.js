@@ -37,7 +37,7 @@ export function subtractNumbers (param1, param2) {
 
 // subtractStrings :: (String, String) -> String
 export function subtractStrings (param1, param2) {
-  return param1.split(param2).join('');
+  return param1.split(param2).join('').trim();
 }
 
 // subtractArrays :: (Array, Array) -> Array

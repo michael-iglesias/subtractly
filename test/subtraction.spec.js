@@ -5,6 +5,14 @@ describe('Subtractly :: a -> b -> a', () => {
   it('Correctly throw error when both params are not of same type or (param1 == {}, param2 == []', () => {
     assert.equal(Error.prototype.toString(subtractly(1, 'foo')), 'Error');
   });
+
+  it('Correctly subtracts numbers', () => {
+    assert.equal(subtractNumbers(22, 10), 12);
+  });
+
+  it('Correctly subtracts or splices strings or splices', () => {
+    assert.equal(subtractStrings('hello world', 'world'), 'hello');
+  });
 });
 
 describe('subtractNumbers()', () => {

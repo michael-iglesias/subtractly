@@ -30,7 +30,7 @@ subtractly(obj1, ['foo', 'bar']);
 // => [{ baz: '789' }]
 ```
 
-2. Diffing arrays
+3. Diffing arrays
 ```
 let arr1 = [1,2,3,4,5],
     arr2 = [2,3];
@@ -39,13 +39,13 @@ subtractly(arr1, arr2);
 // => [1,4,5]
 ```
 
-3. Removing all instances of a substring from a string
+4. Removing all instances of a substring from a string
 ```
 subtractly('mississippi', 'i');
 // => msssspp
 ```
 
-4. Subtracting numbers is difficult... subtractly can handle that as well ;)
+5. Subtracting numbers is difficult... subtractly can handle that as well ;)
 ```
 subtractly(52, 10);
 // => 42

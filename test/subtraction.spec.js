@@ -7,11 +7,23 @@ describe('Subtractly :: a -> b -> a', () => {
   });
 
   it('Correctly subtracts numbers', () => {
-    assert.equal(subtractNumbers(22, 10), 12);
+    assert.equal(subtractly(22, 10), 12);
   });
 
   it('Correctly subtracts or splices strings or splices', () => {
-    assert.equal(subtractStrings('hello world', 'world'), 'hello');
+    assert.equal(subtractly('hello world', 'world'), 'hello');
+  });
+
+  it('Correctly diffs two objects', () => {
+    assert.deepEqual(subtractly({foo: 123, bar: 456, baz: 789}, {bar: 456, baz: 789}), {foo: 123});
+  });
+
+  it('Correctly diffs two arrays', () => {
+    assert.deepEqual(subtractly([1, 2, 3, 4, 5], [1, 2, 3]), [4, 5]);
+  });
+
+  it('Correctly subtract properties from an array when passed an array of props', () => {
+    assert.deepEqual(subtractly({foo: 123, bar: 456}, ['foo']), {bar: 456});
   });
 });
 

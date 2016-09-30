@@ -13,8 +13,34 @@ npm install --save subtractly
 
 ## What is this magic? How does it work?
 
-More info coming soon..
+1. Subtracting two objects
+```
+let obj1 = {foo: 'bar', baz: 'blob'},
+    obj2 = {baz: 'foobar'};
 
+subtractly(obj1, obj2);
+// => [{ foo: 'bar' }]
+```
+
+2. Deleting properties from an object by passing an array of properties to be removed.
+```
+let obj1 = {foo: '123', bar: '456', baz: '789'},
+
+subtractly(obj1, ['foo', 'bar']);
+// => [{ baz: '789' }]
+```
+
+3. Removing all instances of a substring from a string
+```
+subtractly('mississippi', 'i');
+// => msssspp
+```
+
+4. Subtracting numbers is difficult... subtractly can handle that as well ;)
+```
+subtractly(52, 10);
+// => 42
+```
 
 ## License
 

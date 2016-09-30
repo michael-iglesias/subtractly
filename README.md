@@ -13,6 +13,8 @@ npm install --save subtractly
 
 ## What is this magic? How does it work?
 
+This super simple library exports a curried function that allows you to subtract numbers, strings, and diff objects & arrays.
+
 * Subtracting two objects
 ```
 let obj1 = {foo: 'bar', baz: 'blob'},
